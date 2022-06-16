@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registeration Form</title>
+</head>
+<body>
+<h3>Enter your information and click Submit if you want to register</h3>
+<style>
+body {
+  background-image: url('index_files/blue gears.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<form id="subForm" action="RegistrationForm.php" method="post">
+	<table>
+		<tr>
+			<td> First Name: <td>
+			<td> <input type = "text" name ="firstname"> </td>
+		</tr>
+
+		<tr>
+			<td> Last Name: <td>
+			<td> <input type = "text" name ="lastname"> </td>
+		</tr>
+
+		<tr>
+			<td> Email: <td>
+			<td> <input type = "email" name ="email"> </td>
+		</tr>
+
+		<tr>
+			<td> Phone: <td>
+			<td> <input type = "text" name = "phone"> </td>
+		</tr>
+
+		<tr>
+			<td> Password: <td>
+			<td> <input type = "password" name ="password"> </td>
+		</tr>
+		<tr>
+			<tr>
+				<td>
+				<input type="radio" id="mentor" name="acc_type" value="Mentor">
+  				<label for="mentor">Mentor</label><br>
+  				<input type="radio" id="mentee" name="acc_type" value="Mentee">
+  				<label for="mentee">Mentee</label><br>
+				</td>
+			</tr>
+		</tr>
+	</table>
+<input id="button" type="submit" value="Submit" />
+</form>
+</html>
